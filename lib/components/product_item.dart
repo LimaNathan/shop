@@ -17,6 +17,7 @@ class ProductItem extends StatelessWidget {
         footer: GridTileBar(
           backgroundColor: Colors.black54,
           leading: IconButton(
+            color: Theme.of(context).colorScheme.secondary,
             onPressed: () {},
             icon: const Icon(Icons.favorite),
           ),
