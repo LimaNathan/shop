@@ -12,11 +12,13 @@ class ProductDetailPage extends StatelessWidget {
     final Product product =
         ModalRoute.of(context)?.settings.arguments as Product;
     return Scaffold(
-      appBar: AppBar( 
+      appBar: AppBar(
         title: Center(
-          child: Text(product.title),
+          child: Text(
+            product.title,
+          ),
         ),
       ),
-    ); 
+    );
   }
 }
