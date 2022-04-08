@@ -15,7 +15,7 @@ class ProductDetailPage extends StatelessWidget {
       appBar: AppBar(
         title: Center(
           child: Text(
-            product.title,
+            product.name,
           ),
         ),
       ),
