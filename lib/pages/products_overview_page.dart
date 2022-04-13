@@ -31,13 +31,15 @@ class _ProductsOverviewPageState extends State<ProductsOverviewPage> {
                   child: Text("Todos"), value: FilterOptions.all),
             ],
             onSelected: (FilterOptions selectedValue) {
-              setState(() {
-                if (selectedValue == FilterOptions.favorite) {
-                  _showFavoriteOnly = true;
-                } else {
-                  _showFavoriteOnly = false;
-                }
-              });
+              setState(
+                () {
+                  if (selectedValue == FilterOptions.favorite) {
+                    _showFavoriteOnly = true;
+                  } else {
+                    _showFavoriteOnly = false;
+                  }
+                },
+              );
             },
           ),
           Consumer<Cart>(
